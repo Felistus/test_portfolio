@@ -1,24 +1,24 @@
 name: Sample Workflow
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
 
 jobs:
-    sample:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout repo
-              uses: actions/checkout@v4
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-            - name: Setup Node
-              uses: actions/setup-node@v4
-              with:
-                  node-version: "22"
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
 
-            - name: Install dependencies
-              run: npm install
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
 
-            - name: Lint code
-              run: npm run lint
+      - name: Lint code
+        run: npm run lint
