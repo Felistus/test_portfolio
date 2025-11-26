@@ -18,4 +18,9 @@ jobs:
           node-version: "22"
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci --frozen-lockfile
+      # - name: Create deployment
+      #   uses: sws2apps/render-deployment@v2.0.0
+      #   with:
+      #     serviceId: ${{ secrets.RENDER_SERVICE_ID }}
+      #     apiKey: ${{ secrets.RENDER_API_KEY }}
