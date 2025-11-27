@@ -10,7 +10,7 @@ export function Hero() {
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-2xl md:text-7xl font-bold text-slate-900 dark:text-slate-100 mb-2 md:mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-            Ezeugo Felistus Obieze
+            Ezeugo Obieze
           </h1>
           <h2 className="text-2xl md:text-3xl text-slate-600 dark:text-slate-300 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
             Frontend Developer
