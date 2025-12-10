@@ -21,7 +21,8 @@ jobs:
         run: npm ci --frozen-lockfile
 
       - name: Create deployment
-        if: ${{github.event_name == 'push'}}
+        id: render-deployment
+        if: github.event_name == 'push'
         uses: sws2apps/render-deployment@v2.0.0
         with:
           serviceId: ${{ secrets.RENDER_SERVICE_ID }}
