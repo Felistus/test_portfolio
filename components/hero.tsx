@@ -21,13 +21,7 @@ export function Hero() {
             3+ years of experience, I'm passionate about clean code, performance
             optimization, and creating seamless user experiences.
           </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, id
-            dolorum? Minima odit ullam nesciunt voluptates veritatis
-            dignissimos, ut, impedit, nulla cupiditate corrupti quod? Vel esse
-            architecto doloribus, ex enim quaerat minus ducimus nam ipsam, sint
-            ab maxime perferendis a!
-          </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
             <Button size="lg" asChild>
               <Link href="#contact">
