@@ -10,7 +10,7 @@ export function Hero() {
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-2xl md:text-7xl font-bold text-slate-900 dark:text-slate-100 mb-2 md:mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-            Ezeugo Obieze
+            Ezeugo Felistus Obieze
           </h1>
           <h2 className="text-2xl md:text-3xl text-slate-600 dark:text-slate-300 mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
             Frontend Developer
@@ -21,7 +21,13 @@ export function Hero() {
             3+ years of experience, I'm passionate about clean code, performance
             optimization, and creating seamless user experiences.
           </p>
-
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, id
+            dolorum? Minima odit ullam nesciunt voluptates veritatis
+            dignissimos, ut, impedit, nulla cupiditate corrupti quod? Vel esse
+            architecto doloribus, ex enim quaerat minus ducimus nam ipsam, sint
+            ab maxime perferendis a!
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
             <Button size="lg" asChild>
               <Link href="#contact">
