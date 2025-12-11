@@ -6,7 +6,7 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  sample:
+  simple_deployment_pipeline:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -27,3 +27,13 @@ jobs:
         with:
           serviceId: ${{ secrets.RENDER_SERVICE_ID }}
           apiKey: ${{ secrets.RENDER_API_KEY }}
+
+  tag_release:
+    runs-on: ubuntu-latest
+    needs: [simple_deployment_pipeline]
+    steps:
+      - name: Bump version and push tag
+        if: github.event_name == 'push'
+        uses: anothrNick/github-tag-action@1.75.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
